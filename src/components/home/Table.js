@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-
+import { Pagination } from 'antd';
 import styles from '../../styles/less/table.less'
 
 class Table extends React.Component {

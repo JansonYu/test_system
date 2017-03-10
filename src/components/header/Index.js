@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/less/header.less';
 import { USER_INFO_REQUESTED, LOGOUT_REQUESTED } from '../../constants/header';
-
+import { Icon } from 'antd';
 class Header extends React.Component {
 
     constructor(props) {
@@ -19,12 +19,14 @@ class Header extends React.Component {
         return(
             <header className={styles.header}>
                 <div className={styles.logo}>
-                    <a href="/"></a>
+                    <img src="../images/logo.png" />
                 </div>
-                <div className={styles.logout} onClick={this.logout}>
+                <div className={styles.home}>
+                  <Icon type="home" />首页
                 </div>
-                <div className={styles['user-info']}>
-                    {userAccount}
+                <div className={styles.right}>
+                  <span className={styles.name}>于俊</span>
+                  <span className={styles.logout}>退出</span>
                 </div>
             </header>
         )

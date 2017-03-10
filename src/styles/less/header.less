@@ -1,32 +1,34 @@
 .header {
-    background: #3F4065;
-    border: none;
-    border-radius: 0;
-    position: relative;
-    min-height: 50px;
-    padding: 0 15px 2px 15px;
+  width: 100%;
+  height: 80px;
+  border-bottom: 3px solid #F26F21;
+  background: -webkit-linear-gradient(left,#273664, #36395F, #36325F,#323D5F); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left,#273664, #36395F, #36325F,#323D5F); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left,#273664, #36395F, #36325F,#323D5F); /* Firefox 3.6 - 15 */
+  background: linear-gradient(left,#273664, #36395F, #36325F,#323D5F); /* 标准的语法 */
 }
-
 .logo {
-    composes: fl from './common.less';
-    height: 38px;
-    width: 175px;
-    margin: 8px 0 0 0;
-    background: url(../../images/eagleeye-logo.png) no-repeat 20px 0;
+    float: left;
+    margin: 20px 0 0 40px
 }
-
-.user-info {
-    composes: fr from './common.less';
-    composes: mr30 from './common.less';
-    composes: lh50 from './common.less';
-    color: white;
+.home{
+  float: left;
+  color: #fff;
+  margin-left: 40px;
+  line-height: 80px;
 }
-
-.logout {
-    composes: fr from './common.less';
-    composes: mr30 mt15 from './common.less';
-    height: 21px;
-    width: 21px;
-    background: url(../../images/logout.png);
-    cursor: pointer;
+.right{
+  float: right;
+	margin-right: 50px;
+	line-height: 80px;
+	font-size: 14px;
+	color: rgba(255,255,255, .8);
+}
+.name{
+  padding-right:7px;
+	border-right: 1px solid rgba(255,255,255, .8);
+}
+.logout{
+  cursor: pointer;
+  padding-left: 7px;
 }

@@ -10,8 +10,9 @@ import URLS from './constants/URLS';
 import Main from './containers/Main';
 //login
 import Login from './containers/login/login';
-//home
+
 import Home from './containers/home/home';
+import Upload from './containers/home/home';
 
 
 const routes = [{
@@ -24,7 +25,11 @@ const routes = [{
   childRoutes: [
     {
       path: 'home',
-      component: Home
+      component: Home,
+      childRoutes:[{
+        path: 'home/upload',
+        component: Upload
+      }]
     }
   ]
 }];
