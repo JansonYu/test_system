@@ -1,0 +1,32 @@
+.header {
+    background: #3F4065;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    min-height: 50px;
+    padding: 0 15px 2px 15px;
+}
+
+.logo {
+    composes: fl from './common.less';
+    height: 38px;
+    width: 175px;
+    margin: 8px 0 0 0;
+    background: url(../../images/eagleeye-logo.png) no-repeat 20px 0;
+}
+
+.user-info {
+    composes: fr from './common.less';
+    composes: mr30 from './common.less';
+    composes: lh50 from './common.less';
+    color: white;
+}
+
+.logout {
+    composes: fr from './common.less';
+    composes: mr30 mt15 from './common.less';
+    height: 21px;
+    width: 21px;
+    background: url(../../images/logout.png);
+    cursor: pointer;
+}
