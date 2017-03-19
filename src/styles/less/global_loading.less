@@ -1,7 +1,12 @@
 .main {
-    composes: psf from './common.less';
-    bottom: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0, .4);
 }
 
 .main--hidden {
@@ -14,6 +19,9 @@
     height: 50px;
     background: url('../../images/global-loading.svg');
     background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 30%;
 }
 
 .text {

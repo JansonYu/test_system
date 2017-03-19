@@ -1,24 +1,69 @@
 .main {
-    composes: w_100 f16 bg-white from './common.less';
+  padding:0 30px;
+	width: 100%;
+  margin-bottom: 20px;
+	font-size: 12px;
+	table-layout: fixed;
+	border-collapse:collapse;
 }
-
+.table{
+  composes: table-common  from './index.less';
+}
 .header {
-    composes: white from './common.less';
-    background: #666;
-    white-space: nowrap;
+  background-color: #F2F1F1;
+  border-left: 1px solid #F2F1F1;
+  border-right: 1px solid #F2F1F1;
 }
 
 .row {
-    composes: h30 from './common.less';
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  td{
+    height: 50px;
+    color: #666;
+    text-align: center;
+  }
+}
+.span{
+  color: #303861;
+  border:1px solid #ccc;
+  width: 45px;
+  text-align: center;
+  display: inline-block;
+  line-height: 24px;
+  cursor: pointer;
+  &.right{
+    position: relative;
+    left:-1px;
+  }
+  &.disabled{
+    color:#bbb;
+    cursor: default;
+  }
 }
 
-.cell {    
-    composes: p5 from './common.less';
-    border: 1px solid #F3F2ED;
+.handle{
+  color:#303861;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  &:hover{
+    text-decoration: underline;
+  }
+  &.disabled{
+    color:#bbb;
+    cursor: default;
+    &:hover{
+      text-decoration: none
+    }
+  }
 }
+
 
 .header-cell {
-    composes: p5 from './common.less';
+  height: 40px;
+  text-align: center;
 }
 
 .nodata {

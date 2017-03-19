@@ -25,8 +25,8 @@
 
 		request.done(function( data ) {
 			if(dataType=='json'){ // dataType == json
-				if(typeof data == 'object' && typeof data.flag != 'undefined'){
-					if(data.flag==1){
+				if(typeof data == 'object' && typeof data.statusCode != 'undefined'){
+					if(data.statusCode == 0){
 						if(typeof success == 'function'){
 							success.call(this, data.data,request);
 						}

@@ -13,6 +13,8 @@ import Login from './containers/login/login';
 
 import Home from './containers/home/home';
 import Upload from './containers/home/home';
+import Paper from './containers/paper/paper';
+import Chart from './containers/chart/chart';
 
 
 const routes = [{
@@ -26,10 +28,13 @@ const routes = [{
     {
       path: 'home',
       component: Home,
-      childRoutes:[{
-        path: 'home/upload',
-        component: Upload
-      }]
+      childRoutes:[]
+    },{
+      path: '/paper',
+      component: Paper
+    },{
+      path: '/chart',
+      component: Chart
     }
   ]
 }];

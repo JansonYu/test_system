@@ -1,0 +1,21 @@
+{
+    "statusCode": "0",
+    "statusDesc": "" ,
+    "data":{
+        "paperId": 1123,
+        "paperName": "试卷-测试",
+        "collegeId": "123",
+        "collegeName": "学院墨丘利",
+        "projectFirstId": "123",
+        "projectFirstName": "一级项目墨丘利",
+        "projectSecondId": "123",
+        "projectSecondName": "二级项目墨丘利",
+        "subjectId": "123",
+        "subjectName": "科目1",
+        "questionAmount": "100",
+        "paperType": "MODEL_EXAM",
+        "status": "UNACTIVE",
+        "totalTime": "120",
+        "url": "http://www.baidu.com"
+    }
+}

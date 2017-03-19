@@ -1,0 +1,70 @@
+.root{
+  margin-bottom: 30px
+}
+.title{
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.title-name{
+  position: relative;
+  bottom: 5px;
+  left: -10px
+}
+.title-wrong{
+  color:#F04A5E;
+}
+.title-right{
+  color:#50BD72;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: relative;
+  border-top: 32px solid #fff;
+  border-right: 36px solid transparent;
+}
+.triangle-wrong{
+  composes: triangle;
+  border-top: 32px solid #F04A5E;
+}
+.triangle-right{
+  composes: triangle;
+  border-top: 32px solid #50BD72
+}
+.triangle-flag{
+  color:#fff;
+  position: absolute;
+  left: 3px;
+  top:-28px;
+}
+.indexs{
+  display: inline-block;
+  margin-right: 10px;
+}
+.indexs-right{
+  composes:indexs;
+  color: #50BD72
+}
+.indexs-wrong{
+  composes:indexs;
+  color: #F04A5E
+}
+.answer{
+  color:#FF666666;
+  padding: 20px 25px;
+  background: rgba(204, 204, 204, 0.1);
+  border-bottom: 1px dotted #cacaca;
+}
+.yellow{
+  color:#FF7129
+}
+.answer-title{
+  composes: yellow;
+  display: inline-block;
+  float: left;
+}
+.answer-info{
+  padding-left: 45px;
+}

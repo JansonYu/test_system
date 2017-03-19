@@ -1,19 +1,24 @@
-.title {
-    composes: tac from './common.less';
+.root{
+  position: relative;
 }
-
-.button {
-    composes: w120 h30 l30 tac white from './common.less';
-    background: #49a0a3;
-    border-color: #49a0a3;
-    border-radius: 1px;
+.header{
+  height: 60px;
+  background: #fff;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  h1{
+    color: #333;
+    font-size: 24px;
+    height: 60px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 60px;
+  }
 }
-
-.button--ml-15 {
-    composes: button;
-    composes: ml15 from './common.less';
+.querys{
+  margin: 25px;
 }
-
-.table-container {
-    composes: m15 from './common.less';
+.table-container{
+    padding: 0 30px;
 }

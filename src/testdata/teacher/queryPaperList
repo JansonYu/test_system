@@ -1,0 +1,40 @@
+{
+    "statusCode": "0",
+    "statusDesc": "" ,
+    "data":{
+        "total": 100,
+        "pageSize": 10,
+        "pageNo": 1,
+        "rows":[{
+            "paperId": 1123,
+            "paperName": "试卷-测试",
+            "collegeId": "123",
+            "collegeName": "学院墨丘利",
+            "projectFirstId": "123",
+            "projectFirstName": "一级项目墨丘利",
+            "projectSecondId": "123",
+            "projectSecondName": "二级项目墨丘利",
+            "subjectId": "123",
+            "subjectName": "科目1",
+            "questionAmount": "100",
+            "paperType": "1",
+            "status": "1",
+            "totalTime": "120"
+        },{
+            "paperId": 1124,
+            "paperName": "试卷-测试",
+            "collegeId": "123",
+            "collegeName": "墨丘利",
+            "projectFirstId": "123",
+            "projectFirstName": "墨丘利",
+            "projectSecondId": "123",
+            "projectSecondName": "墨丘利",
+            "subjectId": "123",
+            "subjectName": "墨丘利",
+            "questionAmount": "100",
+            "paperType": "1",
+            "status": "1",
+            "totalTime": "120"
+        }]
+    }
+}

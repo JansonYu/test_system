@@ -5,16 +5,12 @@ import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import GlobalLoading from './loading/globalLoading'
 import Header from './header/header';
+import Footer from './footer/footer';
 
 class AppComponent extends React.Component {
   constructor(props) {
     super(props);
 
-  }
-  componentDidMount(){
-
-  }
-  componentWillUnmount(){
   }
 
   render() {
@@ -22,6 +18,7 @@ class AppComponent extends React.Component {
       <div>
         <Header />
         {this.props.children}
+        <Footer />
         <GlobalLoading {...this.props} />
       </div>
     );

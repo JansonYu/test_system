@@ -60,6 +60,7 @@
     "phantomjs-prebuilt": "^2.0.0",
     "postcss": "^5.0.11",
     "postcss-loader": "^0.8.0",
+    "postcss-pxtorem": "^3.3.1",
     "react-addons-test-utils": "^15.0.0",
     "react-hot-loader": "^1.2.9",
     "rimraf": "^2.4.3",
@@ -69,16 +70,22 @@
     "webpack-dev-server": "1.15.1"
   },
   "dependencies": {
-    "antd": "1.6.5",
+    "amcharts3": "github:amcharts/amcharts3",
+    "amcharts3-export": "github:amcharts/export",
+    "amcharts3-react": "github:amcharts/amcharts3-react",
+    "antd": "2.8.1",
     "babel-runtime": "6.11.6",
     "bootstrap": "3.3.7",
     "bragi-browser": "0.0.11",
     "core-js": "2.4.1",
     "extract-text-webpack-plugin": "1.0.1",
     "jquery": "2.2.4",
+    "mockjs": "^1.0.1-beta3",
     "moment": "2.14.1",
     "numeral": "1.5.3",
-    "react": "15.2.1",
+    "postcss": "^5.2.16",
+    "react": "^15.2.1",
+    "react-copy-to-clipboard": "^4.2.3",
     "react-dom": "15.2.1",
     "react-redux": "4.4.5",
     "react-router": "2.6.0",
@@ -88,7 +95,6 @@
     "redux-logger": "2.6.1",
     "redux-saga": "0.9.5",
     "reselect": "2.5.3",
-    "swiper": "3.3.1",
-    "mockjs": "^1.0.1-beta3"
+    "swiper": "3.3.1"
   }
 }

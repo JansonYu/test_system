@@ -15,12 +15,20 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader",  { publicPath: './'}) 
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader",  { publicPath: './'})
       },
-      { 
-          test: /\.less$/, 
-          loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!less-loader",  { publicPath: './'}) 
+      {
+          test: /\.less$/,
+          include:srcPath,
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!less-loader!postcss",  { publicPath: './'})
       },
+      {
+        test: /\.less$/,
+        exclude:srcPath,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader",  { publicPath: './'})
+      },
+
+
       {
         test: /\.(png|jpg|gif|eot|svg|ttf|woff|woff2)$/,
         loader: 'url-loader?limit=8192'

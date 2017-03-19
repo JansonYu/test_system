@@ -1,6 +1,6 @@
 
 require('antd/dist/antd.less');
-require('bootstrap/less/bootstrap.less');
+// require('bootstrap/less/bootstrap.less');
 
 
 require('./styles/less/index.less');

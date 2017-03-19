@@ -1,19 +1,16 @@
 import React from 'react';
 import Link from 'react-router';
 
-import { GET_DATA_REQUESTED } from '../../constants/home';
-
+import CONSTANTS from '../../constants/home';
 import Table from '../../components/home/Table';
-
 import styles from '../../styles/less/home.less';
-import loadingStyles from '../../styles/less/loading.less';
 
 class Home extends React.Component {
     query() {
         const { dispatch } = this.props;
-        dispatch({
-            type: GET_DATA_REQUESTED
-        })
+        // dispatch({
+        //     type: CONSTANTS.GET_DATA_REQUESTED
+        // })
     }
 
     componentDidMount() {
@@ -24,8 +21,7 @@ class Home extends React.Component {
         const { dispatch, tableData, showLoading } = this.props;
         return (
             <div className={styles['table-container']} id="componentsIndex">
-                {showLoading ? <div className={loadingStyles.main}></div> : ''}
-                <Table dispatch={dispatch} tableData={tableData} showLoading={showLoading}/>
+                <Table dispatch={dispatch} tableData={tableData} {...this.props}/>
             </div>
         )
     }

@@ -28,10 +28,10 @@ module.exports = {
     publicPath: defaultSettings.publicPath,
     noInfo: false,
     proxy: {
-    '/api/*': {
+    '/paper/*': {
       target: 'http://localhost:' + defaultSettings.port,
       pathRewrite: function(path, req) {
-                return path.replace(/^\/api/, '/testdata')
+                return path.replace(/^\/paper/, '/testdata')
             },
       onProxyReq: function(proxyReq, req, res) {
           proxyReq.method = 'GET';
@@ -60,5 +60,6 @@ module.exports = {
       config: `${defaultSettings.srcPath}/config/` + process.env.REACT_WEBPACK_ENV
     }
   },
-  module: {}
+  module: {},
+
 };

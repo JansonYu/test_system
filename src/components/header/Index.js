@@ -6,6 +6,10 @@ class Header extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+          isHome: false
+        }
         this.logout = this.logout.bind(this);
     }
 
@@ -16,16 +20,17 @@ class Header extends React.Component {
 
     render() {
         const { userAccount } = this.props;
+        const { isHome } = this.state;
         return(
             <header className={styles.header}>
                 <div className={styles.logo}>
                     <img src="../images/logo.png" />
                 </div>
-                <div className={styles.home}>
-                  <Icon type="home" />首页
+                <div className={styles.home + ' ' +(isHome ? '' : styles['home--active'])}>
+                  <Icon type="home" style={{marginRight:10}} />首页
                 </div>
                 <div className={styles.right}>
-                  <span className={styles.name}>于俊</span>
+                  <span className={styles.name}>XX</span>
                   <span className={styles.logout}>退出</span>
                 </div>
             </header>
@@ -33,7 +38,7 @@ class Header extends React.Component {
     }
     componentDidMount() {
         const { dispatch } = this.props;
-        dispatch({type: USER_INFO_REQUESTED});
+        // dispatch({type: USER_INFO_REQUESTED});
     }
 }
 
